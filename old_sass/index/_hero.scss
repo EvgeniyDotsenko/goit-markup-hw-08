@@ -6,31 +6,29 @@
   background-size: cover;
   background-position: center;
 
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-
-  display: flex;
-  align-items: center;
-
-  &-container {
-    text-align: center;
-    width: 360px;
-    height: 164px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding-top: 200px;
 
   &-title {
     color: $secondary-title-color;
     font-weight: $font-weight-900;
-    font-size: 26px;
-    line-height: 1.62;
-
+    font-size: 44px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
+
     text-transform: uppercase;
     margin-bottom: 30px;
+  }
+
+  &-container {
+    text-align: center;
+    width: 646px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &-button {
