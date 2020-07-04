@@ -1,0 +1,30 @@
+//блок Особенности
+.features {
+  &-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &-div {
+    background-color: $secondary-bg;
+    padding: 25px 190px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
+  &-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-subtitle {
+    font-weight: $font-weight-700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  & .text {
+    line-height: 1.71;
+  }
+}
