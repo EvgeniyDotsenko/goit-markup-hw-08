@@ -210,6 +210,10 @@ main .container {
   line-height: 1.17;
 }
 
+.site-nav .link:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .site-nav .link.current {
   color: #2196f3;
   position: relative;
@@ -225,10 +229,6 @@ main .container {
   border-radius: 2px;
   position: absolute;
   bottom: 0px;
-}
-
-.site-nav .link + .link {
-  margin-top: 40px;
 }
 
 .auth-nav {
