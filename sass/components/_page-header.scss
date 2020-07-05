@@ -3,6 +3,11 @@
   display: none;
 }
 
+.portfolio-header,
+.contact-header {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-width: 768px) {
   .header-nav {
     display: flex;
@@ -59,10 +64,6 @@
       line-height: 1.14;
     }
 
-    & > li:not(:last-child) {
-      margin-right: 30px;
-    }
-
     &-icon {
       margin-right: 10px;
       margin-top: auto;
@@ -74,6 +75,16 @@
       .link:focus & {
         fill: $accent-color;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+
+    & > li:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
