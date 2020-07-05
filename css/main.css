@@ -91,6 +91,16 @@ main .container {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  main .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .button {
   color: #ffffff;
   background-color: #2196f3;
