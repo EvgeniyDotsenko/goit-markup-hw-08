@@ -76,6 +76,10 @@
     position: absolute;
     bottom: 0px;
   }
+
+  & .link + .link {
+    margin-top: 40px;
+  }
 }
 
 .menu-container {

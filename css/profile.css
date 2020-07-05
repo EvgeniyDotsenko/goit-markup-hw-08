@@ -227,6 +227,10 @@ main .container {
   bottom: 0px;
 }
 
+.site-nav .link + .link {
+  margin-top: 40px;
+}
+
 .menu-container {
   background-color: #ffffff;
   text-align: center;
