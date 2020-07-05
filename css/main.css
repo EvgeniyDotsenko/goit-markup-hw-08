@@ -224,7 +224,7 @@ main .container {
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/hero-backgraund.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -258,8 +258,10 @@ main .container {
   display: inline-block;
 }
 
-.features-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .features-div {
@@ -286,6 +288,18 @@ main .container {
 
 .features .text {
   line-height: 1.71;
+}
+
+@media screen and (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .features-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .features-item:not(:nth-last-child(2n + 1)) {
+    margin-right: 30px;
+  }
 }
 
 .doing {
