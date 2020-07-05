@@ -6,7 +6,8 @@
 
   &-div {
     background-color: $secondary-bg;
-    padding: 25px 190px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
     border-radius: 4px;
   }
@@ -14,6 +15,7 @@
   &-icon {
     width: 70px;
     height: 70px;
+    margin: auto;
   }
 
   &-subtitle {
