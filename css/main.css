@@ -244,9 +244,6 @@ main .container {
 }
 
 .auth-nav .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #757575;
   letter-spacing: 0.02em;
   font-weight: 500;
