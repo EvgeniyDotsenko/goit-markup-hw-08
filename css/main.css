@@ -159,7 +159,8 @@ main .container {
 }
 
 .portfolio-header,
-.contact-header {
+.contact-header,
+.header-container {
   border-bottom: 1px solid #ececec;
 }
 
@@ -207,6 +208,12 @@ main .container {
     top: 100%;
     left: 0;
     width: 100%;
+  }
+  .menu-container .site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
   .menu-container.is-open {
     display: block;
