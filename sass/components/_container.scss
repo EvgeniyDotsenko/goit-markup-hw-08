@@ -5,6 +5,10 @@
   padding-right: 15px;
   padding-left: 15px;
 
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
+
   main & {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -25,4 +29,15 @@
 .features .section-title,
 .main-portfolio .section-title {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 }
