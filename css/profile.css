@@ -202,7 +202,7 @@ main .container {
 }
 
 .site-nav .link {
-  display: block;
+  display: inline-block;
   color: #212121;
   letter-spacing: 0.02em;
   font-weight: 500;
