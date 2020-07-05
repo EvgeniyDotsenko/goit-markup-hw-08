@@ -158,6 +158,12 @@ main .container {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    position: relative;
+  }
+}
+
 .portfolio-header,
 .contact-header,
 .header-container {
@@ -194,6 +200,31 @@ main .container {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.site-nav .link {
+  display: block;
+  color: #212121;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 8px;
 }
 
 .menu-container {
