@@ -30,6 +30,11 @@
   fill: #000000;
 }
 
+.menu-button:focus .icon-cross,
+.menu-button:focus .icon-menu {
+  fill: $accent-color;
+}
+
 .menu-button .icon-cross {
   display: none;
 }

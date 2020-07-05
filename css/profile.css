@@ -183,6 +183,11 @@ main .container {
   fill: #000000;
 }
 
+.menu-button:focus .icon-cross,
+.menu-button:focus .icon-menu {
+  fill: #2196f3;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
