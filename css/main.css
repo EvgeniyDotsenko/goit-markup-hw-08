@@ -339,8 +339,10 @@ main .container {
   margin-bottom: 30px;
 }
 
-.team-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-name {
@@ -445,12 +447,25 @@ main .container {
   fill: #2196f3;
 }
 
-.customer-item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .customer-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .customer-item:not(:nth-last-child(2n + 1)) {
+    margin-right: 30px;
+  }
 }
 
-.customer-item:not(:nth-last-child(2n + 1)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .customer-item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  .customer-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .customer-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 
 footer {

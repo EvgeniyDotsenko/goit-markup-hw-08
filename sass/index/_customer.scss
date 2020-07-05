@@ -1,4 +1,4 @@
-// блок Постоянные, клиенты цвет унаследовал
+// блок Постоянные
 .customer-list {
   display: flex;
   flex-wrap: wrap;
@@ -29,11 +29,27 @@
     fill: $accent-color;
   }
 
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
+  @media screen and (max-width: 767px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
 
-  &:not(:nth-last-child(2n + 1)) {
-    margin-right: 30px;
+    &:not(:nth-last-child(2n + 1)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-item {
+    width: calc((100% - 2 * 30px) / 3);
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
   }
 }

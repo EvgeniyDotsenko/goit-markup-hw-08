@@ -16,8 +16,10 @@
     margin-bottom: 30px;
   }
 
-  &-item:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &-name {
