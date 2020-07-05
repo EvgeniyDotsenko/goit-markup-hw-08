@@ -85,14 +85,15 @@
 }
 
 .auth-nav {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
   & > li:not(:last-child) {
     margin: 0 0 16px 0;
   }
 
   & .link {
-    // display: flex;
+    display: flex;
     color: $primmary-text-color;
     letter-spacing: 0.02em;
     font-weight: $font-weight-500;
