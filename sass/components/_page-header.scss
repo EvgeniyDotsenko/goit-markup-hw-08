@@ -49,6 +49,8 @@
 }
 
 .site-nav {
+  margin-bottom: 60px;
+
   & .link {
     display: inline-block;
 
@@ -59,7 +61,7 @@
     line-height: 1.17;
   }
 
-  & .link:not(:last-child) {
+  & li:not(:last-child) {
     margin-bottom: 40px;
   }
 
@@ -86,7 +88,7 @@
   display: inline-block;
 
   & > li:not(:last-child) {
-    margin: 0 0 10px 0;
+    margin: 0 0 16px 0;
   }
 
   & .link {
@@ -122,6 +124,9 @@
     left: 0;
     width: 100%;
     border-top: 1px solid #ececec;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .site-nav {
       font-weight: 500;
