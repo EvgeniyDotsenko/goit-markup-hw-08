@@ -165,8 +165,7 @@ main .container {
 }
 
 .portfolio-header,
-.contact-header,
-.header-container {
+.contact-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -214,6 +213,7 @@ main .container {
 .site-nav .link.current {
   color: #2196f3;
   position: relative;
+  padding-bottom: 8px;
 }
 
 .site-nav .link.current::after {
@@ -224,7 +224,7 @@ main .container {
   background-color: #2196f3;
   border-radius: 2px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
 }
 
 .menu-container {
