@@ -189,6 +189,9 @@ main .container {
     display: block;
     margin-left: auto;
   }
+  .auth-nav > li:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
   .auth-nav .link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -219,7 +222,7 @@ main .container {
     display: flex;
   }
   .auth-nav > li:not(:last-child) {
-    margin-right: 30px;
+    margin: 0 30px 0 0;
   }
 }
 
