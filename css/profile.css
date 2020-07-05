@@ -141,11 +141,6 @@ main .container {
   font-weight: 900;
 }
 
-.site-nav,
-.auth-nav {
-  display: none;
-}
-
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,6 +193,38 @@ main .container {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
