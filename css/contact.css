@@ -146,6 +146,20 @@ main .container {
   display: none;
 }
 
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .portfolio-header,
 .contact-header {
   border-bottom: 1px solid #ececec;
@@ -183,9 +197,6 @@ main .container {
     display: none;
   }
   .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
