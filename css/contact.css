@@ -231,6 +231,38 @@ main .container {
   margin-top: 40px;
 }
 
+.auth-nav {
+  display: inline-block;
+}
+
+.auth-nav > li:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.auth-nav .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #757575;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.auth-nav-icon {
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  fill: #757575;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover .auth-nav-icon,
+.link:focus .auth-nav-icon {
+  fill: #2196f3;
+}
+
 .menu-container {
   background-color: #ffffff;
   text-align: center;
